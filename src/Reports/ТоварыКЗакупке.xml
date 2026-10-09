@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<Report uuid="3956aaf5-0379-5dda-b564-c54e0446fd26">
+		<InternalInfo>
+			<xr:GeneratedType name="ReportObject.ТоварыКЗакупке" category="Object">
+				<xr:TypeId>6bdd2f31-a430-5721-be55-49dcfd3967ca</xr:TypeId>
+				<xr:ValueId>becf6100-193d-5122-8ab5-de4478f5b67d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ReportManager.ТоварыКЗакупке" category="Manager">
+				<xr:TypeId>a9953463-cf00-532b-96f6-26e2e6d00e1e</xr:TypeId>
+				<xr:ValueId>cb4f1337-5307-5ac0-bfce-034aaeaad416</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТоварыКЗакупке</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>ТоварыКЗакупке</v8:content></v8:item></Synonym><Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<MainDataCompositionSchema>Report.ТоварыКЗакупке.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema><DefaultSettingsForm/>
+			<AuxiliarySettingsForm/>
+			<DefaultVariantForm/>
+			<VariantsStorage/>
+			<SettingsStorage/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects><Template>ОсновнаяСхемаКомпоновкиДанных</Template></ChildObjects></Report>
+</MetaDataObject>

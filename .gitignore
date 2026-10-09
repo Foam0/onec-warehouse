@@ -1,6 +1,6 @@
-build/
-reports/
-.tools/
+/build/
+/reports/
+/.tools/
 .idea/
 .vscode/
 __pycache__/

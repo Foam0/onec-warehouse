@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource><name>Источник</name><dataSourceType>Local</dataSourceType></dataSource><dataSet xsi:type="DataSetQuery"><name>Данные</name><field xsi:type="DataSetFieldField"><dataPath>Номенклатура</dataPath><field>Номенклатура</field></field><field xsi:type="DataSetFieldField"><dataPath>Минимум</dataPath><field>Минимум</field></field><field xsi:type="DataSetFieldField"><dataPath>Остаток</dataPath><field>Остаток</field></field><field xsi:type="DataSetFieldField"><dataPath>КЗакупке</dataPath><field>КЗакупке</field></field><dataSource>Источник</dataSource><query>ВЫБРАТЬ
+    Товары.Ссылка КАК Номенклатура,
+    Товары.МинимальныйОстаток КАК Минимум,
+    ЕСТЬNULL(Остатки.Количество, 0) КАК Остаток,
+    Товары.МинимальныйОстаток - ЕСТЬNULL(Остатки.Количество, 0) КАК КЗакупке
+ИЗ Справочник.Номенклатура КАК Товары
+ЛЕВОЕ СОЕДИНЕНИЕ
+    (ВЫБРАТЬ Номенклатура, СУММА(КоличествоОстаток) КАК Количество
+     ИЗ РегистрНакопления.ОстаткиТоваров.Остатки()
+     СГРУППИРОВАТЬ ПО Номенклатура) КАК Остатки
+ПО Товары.Ссылка = Остатки.Номенклатура
+ГДЕ НЕ Товары.ПометкаУдаления
+    И Товары.МинимальныйОстаток &gt; ЕСТЬNULL(Остатки.Количество, 0)</query></dataSet><settingsVariant><dcsset:name>Основной</dcsset:name><dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation><dcsset:settings><dcsset:selection><dcsset:item xsi:type="dcsset:SelectedItemField"><dcsset:field>Номенклатура</dcsset:field></dcsset:item><dcsset:item xsi:type="dcsset:SelectedItemField"><dcsset:field>Минимум</dcsset:field></dcsset:item><dcsset:item xsi:type="dcsset:SelectedItemField"><dcsset:field>Остаток</dcsset:field></dcsset:item><dcsset:item xsi:type="dcsset:SelectedItemField"><dcsset:field>КЗакупке</dcsset:field></dcsset:item></dcsset:selection><dcsset:item xsi:type="dcsset:StructureItemGroup"><dcsset:groupItems/></dcsset:item></dcsset:settings></settingsVariant></DataCompositionSchema>

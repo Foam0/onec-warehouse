@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<Report uuid="2bba0a13-1627-532f-bec7-e90e9fb4082f">
+		<InternalInfo>
+			<xr:GeneratedType name="ReportObject.ОстаткиПоСкладам" category="Object">
+				<xr:TypeId>c6a3e10a-ebdf-567e-8c38-46fcdb71d27d</xr:TypeId>
+				<xr:ValueId>d359d474-67d7-5ac4-89b4-a319628feadb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ReportManager.ОстаткиПоСкладам" category="Manager">
+				<xr:TypeId>6db9cab5-7bfc-590f-b364-fe30a522496f</xr:TypeId>
+				<xr:ValueId>00d75f64-c55e-5260-a555-6d419842bb16</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ОстаткиПоСкладам</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>ОстаткиПоСкладам</v8:content></v8:item></Synonym><Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<MainDataCompositionSchema>Report.ОстаткиПоСкладам.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema><DefaultSettingsForm/>
+			<AuxiliarySettingsForm/>
+			<DefaultVariantForm/>
+			<VariantsStorage/>
+			<SettingsStorage/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects><Template>ОсновнаяСхемаКомпоновкиДанных</Template></ChildObjects></Report>
+</MetaDataObject>
