@@ -1,0 +1,15 @@
+build/
+reports/
+.tools/
+.idea/
+.vscode/
+__pycache__/
+.DS_Store
+*.1CD
+*.1cd
+*.dt
+*.log
+.env
+.env.*
+credentials*.json
+*token*.json
